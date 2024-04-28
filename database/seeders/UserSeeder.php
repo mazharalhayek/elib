@@ -16,15 +16,15 @@ class UserSeeder extends Seeder
     {
         for ($i = 1; $i < 15; $i++) {
             DB::table('users')->insert([
-                'name' => 'mazhar' . $i,
-                'email' => 'mazhar' . $i . '@gmail.com',
-                'password' => Hash::make('aaaaaaaaa'),
+                'name' => 'user' . $i,
+                'email' => 'user' . $i . '@gmail.com',
+                'password' => Hash::make('12345678'),
             ]);
         }
         DB::table('users')->insert([
-            'name' => 'mazhar15',
-            'email' => 'mazhar15@gmail.com',
-            'password' => Hash::make('aaaaaaaaa'),
+            'name' => 'admin',
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('12345678'),
             'role_id'     => 1,
         ]);
     }

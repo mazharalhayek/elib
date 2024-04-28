@@ -2,7 +2,7 @@
 @section('content')
     <div>
         <a href="#newbook" data-toggle="modal" style="margin-left: 10rem" class="btn btn-success">New book</a>
-        <table class="table table-success table-striped books" style="border-radius: 5px">
+        <table class="table table-success table-striped books" style="border-radius: 5px;width: 80%">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -78,12 +78,12 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <div class="form-group">                           
+                        <div class="form-group">
                             <label>Name:</label>
                             <input type="text" class="form-control" name="name" placeholder="Name"
                                required="required">
                                <label>Description:</label>
-                            <input type="text" name="desc" placeholder="Description" 
+                            <input type="text" name="desc" placeholder="Description"
                                 required>
                                 <label>price:</label>
                             <input type="number" name="price" placeholder="price"  required>

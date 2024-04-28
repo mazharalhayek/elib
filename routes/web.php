@@ -18,7 +18,7 @@ use App\Http\Controllers\ForgetPasswordManager;
 */
 
 Route::get('/', function () {
-    return Auth::user()->role_id != 1 ? view('bookslist') : view('admin.booksmanage');
+    return view('welcome');
 })->name('home');
 
 Route::get('/login', [AuthManager::class, 'login'])->name('login');

@@ -24,14 +24,9 @@
                         <hr style="border-color:rgb(141, 137, 137)">
                         <a onclick="toggleOptions('products')">📚 Books</a>
                         <hr style="border-color:rgb(141, 137, 137)">
-                        <div id="products" class="options " style="display: none;">
-                            <a href="{{route('allBooks')}}" class="sidebarbutton">🛒 Buy a book</a>
-                            <a href="" class="sidebarbutton">📖 My Books</a>
-                        </div>
                     </li>
                 </ul>
             @break
-
             @default
         @endswitch
         <ul class="dashboard-buttons">
