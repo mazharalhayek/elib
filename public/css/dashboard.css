@@ -1,0 +1,95 @@
+.dashboard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 95%;
+    background-color: #642a0b;
+    color: #fff;
+    transition: left 0.3s ease-in-out;
+    z-index: 9999;
+    border-radius: 9px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family:cursive;
+}
+
+.dashboard-buttons {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.dashboard-buttons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+.dashboard-buttons li {
+    margin-bottom: 10px;
+}
+
+.dashboard-buttons li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.options {
+    font-size: 13px;
+    margin-left: 10px;
+}
+.options a:hover {
+    background-color: #555;
+}
+.sidebarbutton{
+    border-radius: 5px;
+    width: 100%;
+}
+.sidebarbutton:hover {
+    background-color: #441d08;
+}
+.book-card {
+    width: 12rem;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+}
+.book-card img {
+    height:150px;
+    object-fit: cover;
+}
+.book-card .card-body {
+    padding: 15px;
+}
+.book-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.book-card .card-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.book-card .card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 10px;
+}
+.book-card .card-footer .author {
+    font-size: 14px;
+    font-weight: bold;
+}
+.buy-button{
+    padding: 8px 16px;
+    background-color: #0092e7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.books{
+    width: 50rem;
+    margin-left: 10rem;
+}
