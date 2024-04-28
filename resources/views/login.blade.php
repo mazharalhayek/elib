@@ -37,8 +37,10 @@
           <input type="password" class="form-control" name="password">
         </div>
         <div>
-            <a href="{{route('forget.password')}}">Forget Password</a>
+            <a href="{{route('forget.password')}}">Forgot Your Password?</a>
+            <a href="{{route('registration')}}"> Create An Account </a>
         </div>
+        <br>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
  </div>

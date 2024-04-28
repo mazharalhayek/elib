@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthManager;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\ForgetPasswordManager;
+use Database\Seeders\BookSeeder;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,4 +49,7 @@ Route::group(['middlware' => ['auth']], function () {
     Route::post('newbook', [BookController::class, 'create'])->name('NewBook');
     Route::post('editbook',[BookController::class,'Update'])->name('editBook');
     Route::delete('removebook/{book}',[BookController::class,'remove'])->name('removeBook');
+    Route::get('myBooks', [BookController::class, 'GetMyBooks'])->name('UserBooks');
+    Route::post('/books/{bookId}/purchase', [BookController::class, 'purchase'])->name('Purchase');
+    Route::get('profile',[BookController::class, 'showProfile'])->name('ShowProfile');
 });

@@ -6,6 +6,7 @@ use App\Models\Book;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class BookController extends Controller
 {
@@ -77,4 +78,26 @@ class BookController extends Controller
         session()->flash('success', 'Book removed successfully');
         return redirect()->back();
     }
+
+    public function GetMyBooks() {
+        $user = Auth::user();
+        $books = $user->books;
+    
+        return view('userbooks', compact('books'));
+    }
+
+    public function purchase(Request $request, $bookId)
+    {
+        $user = $request->user(); 
+        $book = Book::findOrFail($bookId); 
+        $user->books()->syncWithoutDetaching([$bookId]); 
+        return redirect()->route('allBooks')->with('success', 'Book purchased successfully!');
+    }
+    public function showProfile()
+    {
+        
+        $user = Auth::user();
+        return view('profile', compact('user'));
+    }
+    
 }

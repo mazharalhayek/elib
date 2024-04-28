@@ -1,7 +1,9 @@
-@extends('layout')
+@extends('adminlayout')
 @section('content')
+<br>
     <div>
         <a href="#newbook" data-toggle="modal" style="margin-left: 10rem" class="btn btn-success">New book</a>
+        <hr>
         <table class="table table-success table-striped books" style="border-radius: 5px;width: 80%">
             <thead>
                 <tr>

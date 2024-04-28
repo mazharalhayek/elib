@@ -15,4 +15,9 @@ class Book extends Model
         'desc',
         'author',
     ];
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
 }
